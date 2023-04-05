@@ -20,7 +20,45 @@
 .about-me {
   max-width: 170px;
   padding: 5px;
-  font-size: 170%;
+  font-size: 150%;
   font-weight: 600;
-  border: 10px solid black;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(25, 25, 25);
+  opacity: 60%
+}
+
+.about-me:hover{
+  opacity: 100%;
+}
+
+/* animated background */
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-30deg, red 50%, black 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
