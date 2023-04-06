@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-top: 300px;
   color: white;
   text-align: center;
+  padding-top: 40vh;
+  height: 60vh
 }
 
 .name{
@@ -33,7 +34,7 @@
 }
 
 /* animated background */
-.bg {
+/* .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-30deg, red 50%, black 50%);
   bottom:0;
@@ -61,4 +62,4 @@
   100% {
     transform:translateX(25%);
   }
-}
+} */
